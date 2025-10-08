@@ -8,9 +8,10 @@
 basic.clearScreen()
 basic.showIcon(IconNames.Happy)
 let Score = 0
+let randomNumber: number = 0
 
 input.onGesture(Gesture.Shake, function() {
-    let randomNumber = randint(0, 2)
+    randomNumber = randint(0, 2)
 
     // if number is 0
     if (randomNumber == 0) {
@@ -34,7 +35,7 @@ input.onGesture(Gesture.Shake, function() {
 
 
 input.onButtonPressed(Button.A, function() {
-    // add 1 to score
+     // add 1 to score
     basic.clearScreen()
     basic.showIcon(IconNames.Yes)
     Score = Score +1
